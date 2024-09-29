@@ -29,11 +29,11 @@ public class NucleotideoAnalyzer {
                     counts[3]++;
                     break;
                 default:
-                    counts[4]++; // Contagem de erros
+                    counts[4]++; 
             }
         }
 
-        // Verifica se os erros são mais de 10% da sequência
+        
         if (counts[4] > sequence.length() * 0.1) {
             return null;
         }
